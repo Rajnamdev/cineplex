@@ -12,8 +12,7 @@ import SearchResult from './pages/searchResult/SearchResult';
 import Explore from './pages/explore/Explore';
 import PageNotFound from './pages/404/PageNotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Signup from './Signup';
-import Login from './Login';
+
 
 
 
@@ -73,10 +72,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path='/register' element={<Signup />} />
-        <Route path='/' element={<Signup />} />
-        <Route path='/login' element={<Login />} />
+        <Route path="/" element={<Home />} />
+{/*         <Route path='/register' element={<Signup />} /> */}
+{/*         <Route path='/' element={<Signup />} /> */}
+{/*         <Route path='/login' element={<Login />} /> */}
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
